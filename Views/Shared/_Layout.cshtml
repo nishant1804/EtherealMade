@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EtherealMade</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body class="font_pitch">
+
+
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-10 header__top">
+            <header class="header">
+                <a asp-controller="Home" asp-action="Index" class="header__logo">Ethereal Made</a>
+                <nav class="menu underline-text">
+                    <a asp-controller="Home" asp-action="Index">Shop+</a>
+                    <a asp-controller="Home" asp-action="AboutUs">About</a>
+                    <a asp-controller="Home" asp-action="Faq">FAQ</a>
+                    <a asp-controller="Home" asp-action="OurFacts">Our Fact</a>
+                    <a asp-controller="Home" asp-action="Index"><img src="https://img.icons8.com/material-rounded/55/000000/favorite-cart.png" /></a>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <link rel="stylesheet" href="~/css//homeOne.css">
+    <div class="mt-200 ">
+        @RenderBody()
+    </div>
+
+    <a href="#cd-nav" class="cd-nav-trigger">
+        Menu
+        <span class="cd-nav-icon"></span>
+
+        <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+            <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+        </svg>
+    </a>
+
+    <!-- Intro Page -->
+    <div id="cd-nav" class="cd-nav">
+        <div class=" line2">
+            <div class="lines ">
+                <div class="cd-navigation-wrapper">
+                    <div class="cd-half-block">
+                        <h2>HELIAS</h2>
+
+                        <nav>
+                            <ul class="cd-primary-nav fullscr " style="list-style-type: none;">
+                                <li><a href="./Shopindex.html" data-letters="Shop" class="link link--kukuri">Shop</a></li>
+                                <li><a href="./AboutUs.html" data-letters="About" class="link link--kukuri">About</a></li>
+                                <li><a href="./OurFacts.html" data-letters="Our Fact" class="link link--kukuri">Our Fact</a></li>
+                                <li><a href="./FAQ.html" data-letters="FAQ" class="link link--kukuri">FAQ</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div>
+                            <nav>
+                                <ul class=" fullscr full-down underline-text" style="list-style-type: none;">
+                                    <li><a href="./Shopindex.html">Blog </a></li>
+                                    <li><a href="./AboutUs.html">Guest Stories</a></li>
+                                    <li><a href="./FAQ.html">Return Policy </a></li>
+                                    <li><a href="./OurFacts.html">Privacy Policy</a></li>
+                                    <li><a href="./OurFacts.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div><!-- .cd-half-block -->
+
+                    <div class="cd-half-block">
+                        <address>
+                            <ul class="cd-contact-info" style="list-style-type: none;">
+                                <li><img src="https://img.icons8.com/ios-filled/25/000000/email-open.png" /></li>
+                                <li><img src="https://img.icons8.com/metro/20/000000/instagram-new.png" /></li>
+                                <li>
+                                    <img src="https://img.icons8.com/android/20/000000/facebook-new.png" />
+                                </li>
+                            </ul>
+                        </address>
+                        <div>
+                            <nav>
+                                <ul class=" fullscr full-down cd-contact-info " style="list-style-type: none;">
+                                    <li class="fullscr "><a style="color: black">Follow us </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="cd-half-block " style="float: right;">
+                        <div class="scroll-container diff-size">
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/flower-sand.jpg" />
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/man-thinking.jpg" />
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/man-laughing.jpg" />
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/piggy-bank.jpg" />
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/couple-smiling.jpg" />
+                            <img class="scroll-section" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/man-luggage.jpg" />
+                        </div>
+                    </div> <!-- .cd-half-block -->
+                </div> <!-- .cd-half-block -->
+            </div>
+        </div>
+    </div>
+    <!-- .cd-navigation-wrapper -->
+    //    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+        <script src="https://kit.fontawesome.com/2a9eb9c5ca.js"></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       
+    </environment>
+    
+    <script src="~/js/Homescript.js" asp-append-version="true"></script>
+    <script src="~/js/slider.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
