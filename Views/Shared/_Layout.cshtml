@@ -20,20 +20,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/indexstyle.css">
 
 </head>
 <body class="font_pitch">
 
 
-    <div class="row">
+    <div class="row mr-150">
         <div class="col-sm-2">
         </div>
         <div class="col-sm-10 header__top">
             <header class="header">
-                <a asp-controller="Home" asp-action="Index" class="header__logo">Ethereal Made</a>
+                <a asp-controller="Home" asp-action="Index" class="header__logo" style="font-family: 'Zilla Slab', serif">Ethereal Made</a>
                 <nav class="menu underline-text">
-                    <a asp-controller="Home" asp-action="Index">Shop+</a>
+                    <a asp-controller="Home" asp-action="Shop">Shop+</a>
                     <a asp-controller="Home" asp-action="AboutUs">About</a>
                     <a asp-controller="Home" asp-action="Faq">FAQ</a>
                     <a asp-controller="Home" asp-action="OurFacts">Our Fact</a>
@@ -42,7 +42,7 @@
             </header>
         </div>
     </div>
-    <link rel="stylesheet" href="~/css//homeOne.css">
+    
     <div class="mt-200 ">
         @RenderBody()
     </div>
@@ -66,7 +66,7 @@
 
                         <nav>
                             <ul class="cd-primary-nav fullscr " style="list-style-type: none;">
-                                <li><a href="./Shopindex.html" data-letters="Shop" class="link link--kukuri">Shop</a></li>
+                                <li><a href="./Shopindex.html" data-letters="Shop" class="link link--kukuri">Shop+</a></li>
                                 <li><a href="./AboutUs.html" data-letters="About" class="link link--kukuri">About</a></li>
                                 <li><a href="./OurFacts.html" data-letters="Our Fact" class="link link--kukuri">Our Fact</a></li>
                                 <li><a href="./FAQ.html" data-letters="FAQ" class="link link--kukuri">FAQ</a></li>
@@ -120,7 +120,7 @@
         </div>
     </div>
     <!-- .cd-navigation-wrapper -->
-    //    <div class="container">
+    <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()

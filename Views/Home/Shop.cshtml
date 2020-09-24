@@ -1,4 +1,11 @@
 ﻿@model EtherealMadeFin.Models.ProductCategoryListingModel
+    <link rel="stylesheet" href="~/css/homeOne.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="~/css/shopindexstyle.css">
+
+
+@*
 <section class="container">
     <div class="page-header">
         <h1>products<br></h1>
@@ -32,43 +39,115 @@
         }
     </div>
 </section>
+    
+*@
 
-<main class="body-net main-net">
-    <header class="header-net">
-        <h1>Shop Gift</h1>
-    </header>
+<div class=" line2">
+    <div class="lines text-item ">
+        <h2 class="Mypage-title">Categories</h2>
+        <h2 class="Mypage-subtitle">Sleep</h2>
+        <section class="overflow-hidden position-relative sec-need">
 
-    <section class="section-net">
+            <div class="container font_pitch">
 
-        <!-- Card Column One -->
-        <div class="flex-col">
-            <div class="cards one">
-                <h3>Supervisor</h3>
-                <p>Monitors activity to identify project roadblocks</p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 ">
+                        <a asp-controller="Home" asp-action="ProductsByCategory" style="text-decoration: none">
+                            <div class="card__grup overflow-hidden position-relative p-3 mr-r">
+                                <img src="https://i.ibb.co/5KW0d6L/1.jpg" href="./categoriesindex.html">
+                                <div class="position-relative">
+                                    <h5 class="uppercase__font">Headteam</h5>
+                                    <div class="  mb-3 opacity-8 ls-2 fw-4">how to work well together in a team</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mr-r">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/2tGk4J6/2.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">position</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-5">how to work well how to work well together in a team together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mr-r">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/f8hD4pQ/3.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">inti.com</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-5">how to work well how to work well together in a team together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 mr-r">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/CQX6K3z/5.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">Real.com</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-5">how to work well together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/CQX6K3z/5.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">Headteam</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-5">how to work well together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </div>
 
-        <!-- Card Column Two -->
-        <div class="flex-col">
-            <div class="cards two">
-                <h3>Team Builder</h3>
-                <p>Scans our talent network to create this optimal team for your project</p>
-            </div>
-            <div class="cards three">
-                <h3>Karma</h3>
-                <p>Regularly evaluates our talent to ensure quality</p>
-            </div>
-        </div>
+        </section>
+        <h2 class="Mypage-subtitle">DanceTop</h2>
+        <section class="overflow-hidden position-relative sec-need">
 
-        <!-- Card Column Three -->
-        <div class="flex-col">
-            <div class="cards four">
-                <h3>Calculator</h3>
-                <p>Uses data from past projects to provide better delivery estimates</p>
-            </div>
-        </div>
+            <div class="container font_pitch">
 
-    </section>
-</main>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 mr-r">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/5KW0d6L/1.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">Headteam</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-4">how to work well together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mr-r">
+                        <div class="card__grup overflow-hidden position-relative p-3">
+                            <img src="https://i.ibb.co/2tGk4J6/2.jpg" alt="">
+                            <div class="position-relative">
+                                <h5 class="uppercase__font">position</h5>
+                                <div class="  mb-3 opacity-8 ls-2 fw-5">how to work well how to work well together in a team together in a team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+        </section>
+
+        <section class="page-container" id="intro">
+            <div class=" section" id="services">
+                <p class="foot-text">EXPLORE OUR PRODUCTS</p>
+                <h2 class=" last-text">Shop</h2>
+                <div class="item item-first ">
+                    <div>
+                        <p>© 2020 All Rights Reserved. Helias Oils</p>
+                    </div>
+                </div>
+        </section>
+    </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js'></script>
 
