@@ -2296,3 +2296,105 @@ text-align: justify;
   33.3% {z-index: 2}
   66.6% {z-index: 1}
 }
+
+
+@media (min-width: 768px) {
+
+    .block_it {
+        display: none;
+        float: right;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .qu-text {
+        font-size: 19px !important;
+    }
+
+    .section {
+        padding: 0rem 0rem;
+    }
+
+    .section-img {
+        padding: 0px 0rem;
+    }
+
+    figure {
+        margin: 1em 10px !important;
+    }
+
+    .Mypage-title {
+        font-size: 80px;
+        margin: 18% 4%;
+        font-size: 30px !important;
+    }
+
+    .font_pitch p {
+        padding: 0% 5% !important;
+    }
+
+    .services .item {
+        margin: 0px auto;
+    }
+
+    .testimonials .client-info {
+        text-align: left;
+    }
+
+    .testimonials .testimonial-details {
+        padding: 0px 0rem;
+    }
+
+    .testimonials .client-info h3 {
+        font-size: 1.5rem;
+        word-spacing: 12px;
+        margin-left: 0px;
+        line-height: 28px;
+        padding: 0 5%;
+    }
+
+    .testimonials .quote {
+        line-height: 1.2;
+        text-align: initial;
+    }
+
+    .font_fou {
+        text-align: left;
+        font-size: 19px !important;
+    }
+
+    .samll_foun {
+        text-align: left;
+        font-size: 14px !important;
+    }
+
+    .small_mg {
+        margin: 20% 0px;
+    }
+
+    .font_70 {
+        font-size: 70px;
+    }
+
+    .font_20 {
+        font-size: 20px;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+    }
+
+    .swiper-wrapper {
+        width:100%
+    }
+    .img-tag {
+        width: 80%;
+    }
+    .timeline .swiper-slide-content{
+        top:0
+    }
+    section.page-container {
+        margin-top: 18%;
+    }
+}

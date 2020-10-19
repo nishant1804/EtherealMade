@@ -15,6 +15,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EtherealMadeFin.InterfaceImplementation;
 using EtherealMadeFin.Interface;
+using Microsoft.Extensions.Hosting;
+using Topshelf.Runtime;
 
 namespace EtherealMadeFin
 {
@@ -41,17 +43,19 @@ namespace EtherealMadeFin
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddScoped<ICategoryFetching, CategoryFetchingImplementation>();
             services.AddScoped<IProduct, ProductImplementation>();
             services.AddScoped<IComment, CommentImplementation>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddControllersWithViews();
+            services.AddRazorPages();
+            services.AddMvc(options =>
+                                       options.SuppressAsyncSuffixInActionNames = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -67,15 +71,15 @@ namespace EtherealMadeFin
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseRouting();
+            app.UseCors();
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-
-            app.UseMvc(routes =>
+            app.UseAuthorization();
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

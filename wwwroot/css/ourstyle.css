@@ -1788,3 +1788,29 @@ text-align: justify;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+
+
+
+
+@media (max-width: 768px) {
+    .Mypage-title {
+        text-align: inherit;
+        margin-bottom: 0;
+        margin-top: 80px;
+    }
+    .small-none {
+        display: none !important;
+    }
+    .section-img {
+        padding: 1.625rem 1rem
+    }
+    .last-text {
+        font-size: 80px !important;
+    }
+    .section {
+        padding: 0rem 1rem;
+    }
+    section.page-container{
+        margin: 100px 0px;
+    }
+}

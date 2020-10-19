@@ -32,6 +32,9 @@ namespace EtherealMadeFin.Controllers
         {
             return View();
         }
+
+        
+
         public IActionResult Contact()
         {
             return View();
@@ -60,6 +63,11 @@ namespace EtherealMadeFin.Controllers
             };
             return View(model);
         }
+
+        public IActionResult ProductByCategory()
+        {
+            return View();
+        }
         public IActionResult ProductsByCategory(int id)
         {
             var products = new List<Product>();
@@ -70,11 +78,16 @@ namespace EtherealMadeFin.Controllers
             };
             return View(model);
         }
+        public IActionResult Products()
+        {
+            return View();
+        }
         public IActionResult Product(int id)
         {
             var product = _Iproduct.GetById(id);
             return View(product);
         }
+        
 
         [Authorize]
         public IActionResult AddCategory()

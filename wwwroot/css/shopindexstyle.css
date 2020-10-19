@@ -340,6 +340,7 @@ h1, h2, h3, h4, h5 {
 
 .card__grup {
   height: 350px;
+  color: black;
 }
 .card__grup > div > p {
   font-size: 14px;
@@ -456,4 +457,31 @@ section.page-container {
   linear-gradient(90deg, transparent, transparent calc((100% / 3 * 2) - 1px), #b3afaf calc(100% / 3 * 2), transparent calc(100% / 3 * 2));
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Mypage-title {
+
+        font-size: 50px;
+        margin-left: 5%;
+    }
+    .Mypage-subtitle {
+        margin-top: 10%;
+        font-size: 40px;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+    .container {
+        padding: 0px; 
+    }
+    .sec-need {
+        padding:  0; 
+    }
+    .last-text {
+        font-size: 70px;
+
+    }
 }

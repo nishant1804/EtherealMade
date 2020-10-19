@@ -58,7 +58,7 @@
 
 .faq .card .card-header .faq-title {
   width: 100%;
-  text-align: left;
+  text-align: justify;
   padding: 0px;
   padding-left: 30px;
   padding-right: 30px;
@@ -92,18 +92,18 @@
   margin-right: 20px;
 }
 
-.faq .card .card-body {
-  background-color: #e6faf2;
-  padding: 30px;
-  padding-left: 35px;
-  padding-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #6F8BA4;
-  line-height: 28px;
-  letter-spacing: 1px;
-  border-top: 1px solid #F3F8FF;
-}
+    .faq .card .card-body {
+        background-color: #f2f6f4;
+        padding: 30px;
+        padding-left: 35px;
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6F8BA4;
+        line-height: 28px;
+        letter-spacing: 1px;
+        border-top: 1px solid #F3F8FF;
+    }
 
 .faq .card .card-body p {
   margin-bottom: 14px;
@@ -155,7 +155,7 @@
 
 .text-faqq {
   font-family:        ‘Lato’, Arial, sans-serif; 
-  margin: 13% 0;
+  margin: 13% 2%;
 
 }
 
@@ -180,4 +180,16 @@
     color: #6F8BA4;
     line-height: 28px;
     letter-spacing: 1px;
+}
+
+@media (max-width: 768px){
+    .faq-section {
+        padding: 0;
+        margin-top: 17%;
+    }
+    .small_font {
+        font-size: 30px;
+    }
+
+
 }

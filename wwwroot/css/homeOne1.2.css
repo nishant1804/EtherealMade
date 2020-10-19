@@ -23,7 +23,7 @@
 }
 
 .full-down{
-      margin-top: 120px;
+      margin-top: 80px;
   line-height: 29px;
 }
 
@@ -477,7 +477,7 @@ main p {
 }
 @media only screen and (min-width: 1170px) {
   .cd-nav .cd-navigation-wrapper {
-    padding: 62px 7% 0 16%;
+    padding: 40px 7% 0 16%;
   }
   .cd-nav .cd-navigation-wrapper::after {
     clear: both;
@@ -489,7 +489,7 @@ main p {
     float: left;
   }
   .cd-nav .cd-primary-nav {
-    margin-top: 0;
+    margin-top: 50%;
   }
   .cd-nav h2 {
     font-size: 1.5rem;
@@ -502,7 +502,7 @@ main p {
     font-size: 5.4rem;
   }
   .cd-nav .cd-contact-info {
-    margin-top: 120px;
+    margin-top: 50%;
     text-align: right;
   }
   .cd-nav .cd-contact-info li {
@@ -663,7 +663,7 @@ main p {
   -ms-scroll-snap-destination: 0% 50%;
       scroll-snap-destination: 0% 50%;
   padding: 0px 15px;
-  margin-top: 100px;
+  margin-top: 50%;
   text-align: center;
   width: auto;
   height: 600px;
@@ -810,7 +810,7 @@ main p {
 }
 
 .slide__title {
-  font-size: 1125px;
+  font-size: 112px;
   max-width: 650px;
   line-height: 1.2;
   font-weight: 600;
@@ -820,11 +820,57 @@ main p {
   margin-top: 25px;
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .slide__title {
-        font-size: 61px;
+        font-size: 71px;
+        padding: 0px 30px 0px 25px;
+    
     }
-}
+    .font_pitchIndex {
+        color: #1f1e1e;
+        padding: 0px 0px 0px 25px;
+    }
+    .slide__image img{
+        opacity : 0.8;
+    }
+    footer {
+        width: 259vw;
+    }
+    .mr-150 {
+        margin-bottom: 0px;
+    }
+    .header__logo {
+        font-size: 32px;
+        padding: 0% 17%;
+        margin-left: 25px;
+    }
+    .header__logo2 {
+        margin-top: 25px;
+    }
+    .cd-nav .cd-navigation-wrapper{
+        padding:0px;
+    }
+    .cd-nav .cd-primary-nav {
+        margin-top: 0;
+        display: inline flow-root list-item;
+    }
+    .cd-nav .cd-primary-nav a {
+         font-size: 4.0rem;
+     }
+    .full-down {
+        margin-top: 25px;
+    }
+    .cd-nav .cd-contact-info {
+        margin-bottom: 30px;
+        display: block ruby;
+    }
+    .cd-nav .cd-contact-info li {
+         margin-left: 15%;
+     }
+    .small-none {
+        display: none !important;
+    }
+  }
 
 
 /******************************/

@@ -144,7 +144,7 @@
         .testimonials .client-info h3:after {
           margin-right: 0; } }
   .testimonials .client-info p {
-    font-size: 1.125rem;
+    font-size: 1.525rem;
     font-weight: 300; }
 .testimonials .quote {
   font-weight: 300;
@@ -233,7 +233,6 @@
 @media only screen and (max-width: 600px){
   .section {
   margin-top: 30px;
-  margin: 0 31px;
 }
 }
 
@@ -775,4 +774,23 @@ section.page-container {
   linear-gradient(90deg, transparent, transparent calc((100% / 3 * 2) - 1px), #b3afaf calc(100% / 3 * 2), transparent calc(100% / 3 * 2));
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section {
+        padding: 0; 
+    }
+    .testimonials .client-info {
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+    .mr-30 {
+        margin: 40px 10px !important;
+    }
+    .last-text {
+        font-size: 75px;
+    }
 }
