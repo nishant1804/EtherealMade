@@ -843,9 +843,11 @@ main p {
         font-size: 32px;
         padding: 0% 17%;
         margin-left: 25px;
+        margin-bottom: 12%;
     }
     .header__logo2 {
-        margin-top: 25px;
+        margin-top: 5px;
+        margin-bottom: 14%;
     }
     .cd-nav .cd-navigation-wrapper{
         padding:0px;
@@ -862,13 +864,16 @@ main p {
     }
     .cd-nav .cd-contact-info {
         margin-bottom: 30px;
-        display: block ruby;
+        display: flex;
     }
     .cd-nav .cd-contact-info li {
          margin-left: 15%;
      }
     .small-none {
         display: none !important;
+    }
+    .cd-nav .cd-contact-info {
+        margin-top: 60px;
     }
   }
 

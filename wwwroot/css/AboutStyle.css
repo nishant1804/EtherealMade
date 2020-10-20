@@ -656,7 +656,6 @@ a {
       width: 72.69565%; } }
 @media (min-width: 768px) {
   .services .description {
-    width: 38.6087%;
     margin-left: 9%; } }
 .services h3 {
   color: black;
@@ -2305,7 +2304,103 @@ text-align: justify;
         float: right;
     }
 }
+@media only screen and (min-width: 1170px) {
+    .cd-nav .cd-primary-nav a {
+        font-size: 3.0rem;
+    }
+}
 
+
+#circle {
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+    #circle text {
+        font-family: 'Helvetica Neue', Arial;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #circle svg {
+        margin: 20% 6%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 540px;
+        -webkit-animation-name: rotate;
+        -moz-animation-name: rotate;
+        -ms-animation-name: rotate;
+        -o-animation-name: rotate;
+        animation-name: rotate;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+        -o-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+
+    to {
+        -moz-transform: rotate(0);
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform: rotate(360deg);
+    }
+
+    to {
+        -ms-transform: rotate(0);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(360deg);
+    }
+
+    to {
+        -o-transform: rotate(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
 
 @media (max-width: 768px) {
     .qu-text {
@@ -2396,5 +2491,19 @@ text-align: justify;
     }
     section.page-container {
         margin-top: 18%;
+    }
+    #circle svg{
+        margin: -27% 0;
+    }
+    .cd-nav .cd-primary-nav a {
+        font-size: 2.4rem;
+    }
+    .cd-nav .cd-primary-nav {
+        margin-top: 0;
+        margin-left: 10%;
+        display: inline flow-root list-item;
+    }
+    .underline-text li {
+        margin-left: 10%;
     }
 }

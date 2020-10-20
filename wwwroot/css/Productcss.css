@@ -319,6 +319,9 @@
 }
 
 
+.owl-carousel {
+    display: block !important;
+}
 
 
 
@@ -1344,5 +1347,132 @@ img.float-right {
 
     .small_font {
         font-size: 30px;
+    }
+}
+
+
+.my_line {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 100px !important;
+    line-height: 100px;
+}
+
+.dis_none_full {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .pd-wrap {
+         padding:  0; 
+    }
+    .text-hed {
+        font-size: 45px !important;
+    }
+    .product-price-discount {
+        padding: 17px 0;
+    }
+    .font_pitch p {
+        font-size: 18px !important;
+        text-align: inherit;
+        line-height: 30px;
+    }
+    .round-black-btn {
+        font-size: 18px;
+        padding: 3px 12px;
+    }
+    #slide_part {
+        padding: 10px 0;
+    }
+    .dis_none {
+        display: none !important;
+    }
+    .dis_none_full {
+        display: block !important;
+    }
+    .text_team {
+        font-size: 40px !important;
+    }
+    .section-count {
+        height: 0px;
+    }
+    #slide_part .slide_part-section-text {
+        padding-bottom: 0;
+    }
+    #slide_part .slide_part-single {
+         margin: 30px auto 0;
+    }
+    section.page-container {
+        text-align: justify;
+        padding: 0% 0;
+    }
+    .section {
+        margin-top: 30px;
+        margin: 0 7px;
+    }
+    .my_line {
+        font-size: 30px !important;
+        line-height: 40px;
+    }
+    .testimonials .testimonial-details {
+         margin-bottom: 2.5rem; 
+         padding: 0 1rem; 
+    }
+    .round-black-btn {
+        font-size: 13px;
+        padding: 3px 5px;
+    }
+    section .img_temp {
+        height: auto;
+        width: 85%;
+    }
+    .font_pitch p {
+        line-height: 25px;
+    }
+    .Mypage-title {
+        font-size: 40px;
+        margin-left: 6%;
+        margin-bottom: 0px;
+    }
+    .section-content {
+        display: none;
+        padding: 0;
+        background: #ffffff;
+    }
+    .Mypage-title {
+        margin-top: 6px;
+        font-size: 26px;
+        margin-left: 6%;
+    }
+    .dress-card-img-top {
+        width: 66%;
+        border-radius: 7px 7px 0 0;
+    }
+    .dress-card-body {
+        width: 66%;
+    }
+    .dress-card-title {
+        line-height: 1.5rem;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .dress-card-price {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .dress-card-crossed {
+        font-size: 16px;
+    }
+    .dress-card-off {
+        font-size: 17px;
+    }
+    .you_like {
+        margin: 6% 0%;
+        left: 14%;
+    }
+    .gtco-testimonials {
+        margin: 0;
+    }
+    carousel.owl-loaded {
+        margin-bottom: 9%;
     }
 }

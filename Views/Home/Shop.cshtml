@@ -1,46 +1,11 @@
 ﻿@model EtherealMadeFin.Models.ProductCategoryListingModel
-    <link rel="stylesheet" href="~/css/homeOne1.2.css">
+<link rel="stylesheet" href="~/css/homeOne1.2.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="~/css/shopindexstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
-@*
-<section class="container">
-    <div class="page-header">
-        <h1>products<br></h1>
-    </div>
-    <div class="row active-with-click " style="margin: auto">
-        @foreach (var category in Model.Categories)
-        {
-
-            <div class="col-md-3 col-sm-6 col-xs-12 res">
-                <article class="material-card Red">
-                    <h2>
-                        <a style="text-decoration: none" asp-controller="Home" asp-action="ProductsByCategory" asp-route-id="@category.CategoryId">
-                            <span>@category.CategoryTitle</span>
-                            <strong>
-                                @category.CategoryDescription
-                            </strong>
-                        </a>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-responsive" src="@category.CategoryImageUrl">
-                        </div>
-                        <div class="mc-description">
-                            @category.CategoryExtraDescription
-                        </div>
-                    </div>
-
-
-                </article>
-            </div>
-        }
-    </div>
-</section>
-    
-*@
 
 <div class=" line2">
     <div class="lines text-item ">
@@ -146,6 +111,7 @@
         </section>
     </div>
 </div>
+
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js'></script>

@@ -1813,4 +1813,13 @@ text-align: justify;
     section.page-container{
         margin: 100px 0px;
     }
+    .cd-nav .cd-primary-nav {
+        margin-top: 0;
+        margin-left: 10%;
+        display: inline flow-root list-item;
+    }
+
+    .underline-text li {
+        margin-left: 10%;
+    }
 }
